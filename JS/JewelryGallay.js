@@ -76,31 +76,31 @@ var slideIndex2 = 1;
 
     // ALL THILD IMAGES GALARY
 
-    // var slideIndex3 = 1;
-    // showSlides3(slideIndex3);
+    var slideIndex3 = 1;
+    showSlides3(slideIndex3);
 
-    // // Next/previous controls
-    // function plusSlides3(d) {
-    // showSlides3(slideIndex3 += d);
-    // }
+    // Next/previous controls
+    function plusSlides3(d) {
+    showSlides3(slideIndex3 += d);
+    }
 
-    // // Thumbnail image controls
-    // function currentSlide(d) {
-    // showSlides3(slideIndex3 = d);
-    // }
+    // Thumbnail image controls
+    function currentSlide(d) {
+    showSlides3(slideIndex3 = d);
+    }
 
-    // function showSlides3(d) {
-    //     var f;
-    //     var slides = document.getElementsByClassName("mySlides3");
-    //     var dots = document.getElementsByClassName("dot3");
-    //     if (d > slides.length) {slideIndex3 = 1}
-    //     if (d < 1) {slideIndex3 = slides.length}
-    //     for (f = 0; f < slides.length; f++) {
-    //         slides[f].style.display = "none";
-    //     }
-    //     for (f = 0; f < dots.length; f++) {
-    //         dots[f].className = dots[f].className.replace(" active", "");
-    //     }
-    //     slides[slideIndex3-1].style.display = "block";
-    //     dots3[slideIndex3-1].className += " active";
-    // }
+    function showSlides3(d) {
+        var f;
+        var slides = document.getElementsByClassName("mySlides3");
+        var dots = document.getElementsByClassName("dot3");
+        if (d > slides.length) {slideIndex3 = 1}
+        if (d < 1) {slideIndex3 = slides.length}
+        for (f = 0; f < slides.length; f++) {
+            slides[f].style.display = "none";
+        }
+        for (f = 0; f < dots.length; f++) {
+            dots[f].className = dots[f].className.replace(" active", "");
+        }
+        slides[slideIndex3-1].style.display = "block";
+        dots3[slideIndex3-1].className += " active";
+    }

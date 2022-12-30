@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>GREATNESS SELLS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* SELL HEADER SIGN UP */
+        .sellHeader {
+            background-color: #fff;
+            box-shadow: 2px 4px 8px #ccc;
+            position: fixed;
+            width: 100%;
+            padding: 20px;
+            align-items: center;
+        }
+        .sellHeader .btn {
+            background-color: #FF9900;
+            padding: 10px 40px;
+            border-radius: 40px;
+        }
+        .sellHeader .btn a {
+            color: #000;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .sellHeader h3 {
+            font-weight: bold;
+        }
+        /* SELL FIRST CONTENT */
+        .sell {
+            align-items: center;
+            text-align: center;
+            margin-top: 10%;
+            justify-content: center;
+        }
+        .sell-left {
+            padding-top: 10%;
+        }
+        .sell-left h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .sell-left p {
+            font-weight: 500;
+        }
+        .sell-left .btn {
+            background-color: #FF9900;
+            padding: 10px 40px;
+            border-radius: 40px;
+        }
+        .sell-left .btn a{
+            color: #000;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        /* SELL SECOND CONTENT */
+        .sell-benefit {
+            align-items: center;
+            justify-content: center;
+        }
+        .benefit-left {
+            text-align: center;
+        }
+        .benefit-right h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .benefit-right .btn a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        /* SELLING MORE */
+        .selling {
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .selling h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .selling img {
+            width: 15%;
+            height: 15%;
+        }
+        .selling-word {
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+        }
+        .selling-word h2 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .selling-word .btn a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .selling-left{
+            background-color: #fff;
+            box-shadow: 1px 2px 8px #000;
+            padding: 40px;
+        }
+        .selling-right{
+            background-color: #fff;
+            box-shadow: 1px 2px 8px #000;
+            padding: 40px;
+        }
+        /* LEARNING MORE */
+        .all-learing {
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 1px 2px 8px #000;
+            margin: auto;
+            text-align: center;
+            padding: 70px;
+            width: 82%;
+            height: auto;
+        }
+        .all-learing p{
+            text-align: left;
+        }
+        .learning-word {
+            margin-top: 30px;
+        }
+        /* ALL ECO */
+        .eco-content h1 {
+            margin-top: 80px;
+            text-align: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .eco {
+            background-color: #fff;
+            box-shadow: 1px 2px 8px #000;
+            padding: 30px;
+            margin: 40px auto;
+        }
+        .eco img {
+            width: 20%;
+            height: 20%;
+        }
+        .eco .btn a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <div class="content">
+        <div class="all-navbar shadow">
+            <div class="navbar-content flex justify-content">
+                <h3 class="logo"><a class="btn" href="index.html">GREAT<em>NESS</em></a></h3>
+                <div class="deliver" id="media">
+                    <p><a class="btn text-light" href="">Deliver<br><i class="fa-solid fa-location-dot"></i>Nigeria</a>
+                    </p>
+                </div>
+                <!-- SEARCH -->
+                <div class="search">
+                    <form action="" method="get" class="search-bar flex">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="signin">
+                    <a class="btn text-light" href="./login.html"> <small>Hello Sign in</small>
+                        <h6 class="lis">Account & Lists<i class="fa-solid fa-caret-down"></i></h6>
+                    </a>
+                    <!-- All hover -->
+                    <div class="container text-center" id="all-hover">
+                        <div class="signin-hover">
+                            <p><a href="login.html" class="sign">Sign in</a> <br>New customer? <a
+                                    href="registration.html">Start here</a></p>
+                        </div>
+                        <hr>
+                        <div class="row text-center" id="hover-content">
+                            <div class="col-md-6">
+                                <h6>Your Lists</h6>
+                                <p><a href=""> Create a List</a></p>
+                                <p><a href=""> Find a List or Registry</a></p>
+                                <p><a href=""> GreatNess Smile Charity Lists</a></p>
+                            </div>
+                            <div class="col-md-6" id="acc">
+                                <h6>Your Account</h6>
+                                <p><a href=""> Account</a></p>
+                                <p><a href=""> Orders</a></p>
+                                <p><a href=""> Recommendations</a></p>
+                                <p><a href=""> Browsing History</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn text-light mt-2" href="">
+                    <p class="icon"><i class="fa-solid fa-cart-shopping"></i>Cart</p>
+                </a>
+            </div>
+        </div>
+        <!-- Second Navbar -->
+        <div class="second-navbar flex justify-content shadow">
+            <div class="all">
+                <a class="btn" href=""><i class="fa-solid fa-bars"></i>All</a>
+                <a class="btn" href="./customerService.html">Customer Service</a>
+                <a class="btn" href="./registration.html">Register</a>
+                <a class="btn" href="./registration.html">Gift Card</a>
+                <a class="btn" href="./sell.html">Sell</a>
+            </div>
+            <div class="all-deal">
+                <a class="btn" href="./gift.html">Shop holiday fashion deals</a>
+            </div>
+        </div>
+    </div>
+    <!-- SELL HEADER SIGN UP -->
+    <div class="sellHeader flex justify-content">
+        <div class="sellHeader-left">
+            <h3>Sell on Greatness</h3>
+        </div>
+        <div class="sellHeader-right">
+            <div class="btn">
+                <a href="./login.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SELL FIRST CONTENT -->
+    <div class="sell-content">
+        <div class="row sell">
+            <div class="col-md-6 sell-left">
+            <h1>Become an</h1>
+            <h1>Greatness seller</h1>
+            <p>The fastest-growing and preferred acquisition channel for <br> over half our multichannel sellers.</p>
+            <div class="btn">
+                <a href="">Sing in</a>
+            </div>
+        </div>
+            <div class="col-md-6 sell-right">
+                <img src="./IMG/Back-IMG/prime-boxes-2.png" alt=""> 
+            </div>
+        </div>
+        
+
+    <!-- SELL SECOND CONTENT -->
+        <div class="row sell-benefit">
+            <div class="col-md-6 benefit-left">
+                <img src="./IMG/Back-IMG/illustration-growth-graph.svg" alt="">
+            </div>
+
+            <div class="col-md-6 benefit-right">
+            <h1>Over $50K in potential benefits</h1>
+            <h6>Ready to sell? Launch your brand today with a powerful playbook for new <br> sellers and over $50K in potential benefits.</h6>
+            <div class="benefit-word">
+                <p><img src="./IMG/Back-IMG/correct.svg" alt=""> Get 5% back on your first $1,000,000 in branded sales</p>
+                <p><img src="./IMG/Back-IMG/correct.svg" alt=""> Try FBA with free inbound shipping, storage, removals, and returns</p>
+                <p><img src="./IMG/Back-IMG/correct.svg" alt=""> Get $200 credit for Sponsored Products CPC ads—bids are up to you</p>
+                <p><img src="./IMG/Back-IMG/correct.svg" alt=""> Get a head start on brand protection, product reviews, and more</p>
+                <div class="btn">
+                    <a href="">Learn more <i class="fa-thin fa-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- SELLING MORE -->
+        <div class="selling">
+            <h1>Sell more with Greatness</h1>
+            <div class="row selling-word">
+                <div class="col-md-5 selling-left">
+                    <img src="./IMG/Back-IMG/SOA_Desktop_Computer_USD._CB424651259_.svg" alt="">
+                    <h2>They're here, introduce <br> yourself</h2>
+                    <p>Hundreds of millions of worldwide active customer accounts. More than 200 million paid Prime members worldwide. Reduce the time, effort, and money you spend on customer acquisition with powerful ad products, unparalleled organic traffic, and a shopping experience that converts.</p>
+                    <div class="btn">
+                        <a href="">How to get started <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 selling-right">
+                    <img src="./IMG/Back-IMG/Business_Growth._CB424651247_.svg" alt="">
+                    <h2>Unrivaled scale, no cap</h2>
+                    <p>Greatness customers buy roughly 7,400 products per minute from U.S. sellers. Build, grow, and scale your brand with our innovative toolkit: a proven customer experience, rich data insights, cutting-edge advertising & marketing solutions, and world-class logistics with Fulfillment by Amazon (FBA). There is no ceiling—how big do you want to go?</p>
+                    <div class="btn">
+                        <a href="">Explore pricing <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND SELLING MORE -->
+        <div class="selling">
+            <div class="row selling-word">
+                <div class="col-md-5 selling-left">
+                    <img src="./IMG/Back-IMG/Enhanced_Content._CB424651237_.svg" alt="">
+                    <h2>They're here, introduce <br> yourself</h2>
+                    <p>Hundreds of millions of worldwide active customer accounts. More than 200 million paid Prime members worldwide. Reduce the time, effort, and money you spend on customer acquisition with powerful ad products, unparalleled organic traffic, and a shopping experience that converts.</p>
+                    <div class="btn">
+                        <a href="">How to get started <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 selling-right">
+                    <img src="./IMG/Back-IMG/Chatting._CB424651247_.svg" alt="">
+                    <h2>Unrivaled scale, no cap</h2>
+                    <p>Greatness customers buy roughly 7,400 products per minute from U.S. sellers. Build, grow, and scale your brand with our innovative toolkit: a proven customer experience, rich data insights, cutting-edge advertising & marketing solutions, and world-class logistics with Fulfillment by Amazon (FBA). There is no ceiling—how big do you want to go?</p>
+                    <div class="btn">
+                        <a href="">Explore pricing <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!-- LEARING MORE -->
+        <div class="all-learing">
+            <h1>Learn more about selling with Greatness</h1>
+            <div class="row learning-word">
+                <div class="col-md-6">
+                    <p>Sell online: How to get started <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>The Beginner's Guide to Selling on Greatness <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Grow your ecommerce business with Greatness <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Build, grow, and protect your brand on Greatness <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Build an online store featuring your brand <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Watch free tutorial videos from Seller University <i class="fa-thin fa-arrow-up-right"></i></p>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Get help from an Greatness account manager <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>How much does it cost to sell on Greatness <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Use FBA to scale your ecommerce business <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Greatness Handmade, Greatness Business, and more <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Advertise your products on Greatness <i class="fa-thin fa-arrow-up-right"></i></p>
+                    <p>Case studies about Greatness third-party sellers <i class="fa-thin fa-arrow-up-right"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- ALL ECO -->
+        <div class="eco-content">
+            <h1>Introduction to ecommerce selling</h1>
+            <div class="row eco-list">
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Mobile_App.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Line_Chart.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Delivery_Truck.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row eco-list">
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Products_In_Boxes.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Checklist.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Stores.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row eco-list">
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Books.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Seller_University._CB424651257_.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 eco">
+                    <img src="./IMG/Back-IMG/Spotlight._CB424651253_.svg" alt="">
+                    <h2>What is <br> ecommerce?</h2>
+                    <p>Electronic commerce (ecommerce) is the trading of goods and services on the internet. Learn about the advantages and disadvantages of this selling channel.</p>
+                    <div class="btn">
+                        <a href="">Intro to ecommerce <i class="fa-thin fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="back-up shadow text-center">
+            <a href="">Back to top <i class="fa fa-arrow-up"></i></a>
+        </div>
+        
+        <div class="footer flex justify-content space text-left">
+            <div class="left-footer flex justify-content space">
+                <div class="know-us">
+                    <h5>Get to know us</h5>
+                    <p><a href="">Career</a></p>
+                    <p><a href="">Blog</a></p>
+                    <p><a href="">About GreatNess</a></p>
+                    <p><a href="">Investor Relations</a></p>
+                    <p><a href="">GreatNess Devices</a></p>
+                    <p><a href="">GreatNess Science</a></p>
+                </div>
+                <div class="make-money">
+                    <h5>Make Money with Us</h5>
+                    <p><a href="">Sell products on GreatNess</a></p>
+                    <p><a href="">Sell on GreatNess Business</a></p>
+                    <p><a href="">Sell apps on GreatNess</a></p>
+                    <p><a href="">Become an Affiliate</a></p>
+                    <p><a href="">Advertise Your Products</a></p>
+                    <p><a href="">Self-Publish with Us</a></p>
+                    <p><a href="">Host an GreatNessHub</a></p>
+                    <p><a href="">>See More Make Money with Us</a></p>
+                </div>
+            </div>
+            <div class="right-footer flex justify-content space">
+                <div class="payment">
+                    <h5>GreatNess Payment Products</h5>
+                    <p><a href="">GreatNess Business Card</a></p>
+                    <p><a href="">Shop with Points</a></p>
+                    <p><a href="">Reload Your Balance</a></p>
+                    <p><a href="">GreatNess Currency Converter</a></p>
+                </div>
+                <div class="help">
+                    <h5>Let Us Help You</h5>
+                    <p><a href="">Your Account</a></p>
+                    <p><a href="">Your Orders</a></p>
+                    <p><a href="">Shipping Rates & Policies</a></p>
+                    <p><a href="">Returns & Replacements</a></p>
+                    <p><a href="">Manage Your Content and Devices</a></p>
+                    <p><a href="">GreatNess Assistant</a>
+                    <p><a href="">Help</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+</html>

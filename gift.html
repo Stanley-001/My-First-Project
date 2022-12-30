@@ -15,6 +15,10 @@
             margin: 0;
             box-sizing: border-box;
         }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
         .headers-content {
             background: darkblue;
             color: #fff;
@@ -39,6 +43,13 @@
         .allFooterContent {
             margin-top: 100px;
         }
+
+        /* RESPONSIVENESS */
+        @media (max-width: 720px){
+        *{
+            box-sizing: border-box;
+        }
+    }
     </style>
 </head>
 <body>
@@ -85,11 +96,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="return" id="media">
-                    <a class="btn text-light" href=""><small>Returns</small>
-                        <h6>& Order</h6>
-                    </a>
-                </div>
                 <a class="btn text-light mt-2" href="">
                     <p class="icon"><i class="fa-solid fa-cart-shopping"></i>Cart</p>
                 </a>
@@ -99,14 +105,13 @@
         <div class="second-navbar flex justify-content shadow">
             <div class="all">
                 <a class="btn" href=""><i class="fa-solid fa-bars"></i>All</a>
-                <a class="btn" href="">Today Deal's</a>
-                <a class="btn" href="">Customer Service</a>
-                <a class="btn" href="">Register</a>
-                <a class="btn" href="">Gift Card</a>
-                <a class="btn" href="">Sell</a>
+                <a class="btn" href="./customerService.html">Customer Service</a>
+                <a class="btn" href="./registration.html">Register</a>
+                <a class="btn" href="./gift.html">Gift Card</a>
+                <a class="btn" href="./sell.html">Sell</a>
             </div>
             <div class="all-deal">
-                <a class="btn" href="">Shop holiday fashion deals</a>
+                <a class="btn" href="./gift.html">Shop holiday fashion deals</a>
             </div>
         </div>
     </div>
@@ -115,10 +120,10 @@
         <div class="headers-content">
     <h1>GREATNESS HOLIDAY GIFTS GUIDE</h1></div>
     <!-- FIRST GIFT -->
-    <div class="row mb-5 mt-5">
+    <div class="row mt-5">
         <div class="col-md-6">
             <img src="./IMG/Back-IMG/GIFT.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
             <h3>Home Holiday Guide</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -128,7 +133,7 @@
         </div>
         <div class="col-md-6">
             <img src="./IMG/Back-IMG/GIFT-2.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
             <h3>Home Holiday Guide</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -141,7 +146,7 @@
     <div class="row mb-5">
         <div class="col-md-6">
             <img src="./IMG/Back-IMG/GIFT-3.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
             <h3>Electronics Gift Guide</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -151,7 +156,7 @@
         </div>
         <div class="col-md-6">
             <img src="./IMG/Back-IMG/GIFT-4.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
             <h3>Holiday Toy List</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -164,7 +169,7 @@
         <div class="row mb-5">
         <div class="col-md-3">
             <img src="./IMG/Back-IMG/Beauty-gift-guide.gif" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
                 <h3>Customer's Beauty Gift Guide</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -174,7 +179,7 @@
         </div>
         <div class="col-md-3">
             <img src="./IMG/Back-IMG/Customers-loved-gifts.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
                 <h3>Customer's Most Loved Gifts</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -184,7 +189,7 @@
         </div>
         <div class="col-md-3">
             <img src="./IMG/Back-IMG/Stocking-picks.gif" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
                 <h3>Our Stocking Stuffer Picks</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">
@@ -194,7 +199,7 @@
         </div>
         <div class="col-md-3">
             <img src="./IMG/Back-IMG/Outdoors-gift-guide.jpg" class="img-fluid">
-            <div class="details">
+            <div class="details mb-5 mt-5">
                 <h3>Sports & Outdoors Gift Guide</h3>
             <h3><i class="fa fa-naira-sign">25000</i> <span><i class="fa fa-naira-sign">19000</i></span></h3>
             <div class="shop-link">

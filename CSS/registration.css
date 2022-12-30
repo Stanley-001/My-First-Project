@@ -5,6 +5,7 @@
 body{
     background-color: #000;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .logo h3 a{
@@ -61,4 +62,12 @@ a{
     text-align: center;
     margin-top: 50px;
     margin-top: 70px;
+}
+
+@media (max-width: 720px) {
+    .all-register {
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
 }
