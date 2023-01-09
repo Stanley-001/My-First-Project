@@ -54,53 +54,49 @@
 </head>
 <body>
     <div class="content">
-        <div class="all-navbar shadow">
-            <div class="navbar-content flex justify-content">
-                <h3 class="logo"><a class="btn" href="index.html">GREAT<em>NESS</em></a></h3>
-                <div class="deliver" id="media">
-                    <p><a class="btn text-light" href="">Deliver<br><i class="fa-solid fa-location-dot"></i>Nigeria</a>
-                    </p>
-                </div>
-                <!-- SEARCH -->
-                <div class="search">
-                    <form action="" method="get" class="search-bar flex">
-                        <input type="text" placeholder="Search">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-                <div class="signin">
-                    <a class="btn text-light" href="./login.html"> <small>Hello Sign in</small>
-                        <h6 class="lis">Account & Lists<i class="fa-solid fa-caret-down"></i></h6>
-                    </a>
-                    <!-- All hover -->
-                    <div class="container text-center" id="all-hover">
-                        <div class="signin-hover">
-                            <p><a href="login.html" class="sign">Sign in</a> <br>New customer? <a
-                                    href="registration.html">Start here</a></p>
-                        </div>
-                        <hr>
-                        <div class="row text-center" id="hover-content">
-                            <div class="col-md-6">
-                                <h6>Your Lists</h6>
-                                <p><a href=""> Create a List</a></p>
-                                <p><a href=""> Find a List or Registry</a></p>
-                                <p><a href=""> GreatNess Smile Charity Lists</a></p>
-                            </div>
-                            <div class="col-md-6" id="acc">
-                                <h6>Your Account</h6>
-                                <p><a href=""> Account</a></p>
-                                <p><a href=""> Orders</a></p>
-                                <p><a href=""> Recommendations</a></p>
-                                <p><a href=""> Browsing History</a></p>
-                            </div>
-                        </div>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">GREAT<em>NESS</em></a>
+                    <!--Search -->
+                    <div class="search">
+                        <form action="" method="get" class="nav-link search-bar flex">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
                     </div>
+                    <button class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Deliver<br><i class="fa-solid fa-location-dot"></i>Nigeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Search -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hello Sign in <br>Account & Lists</a>
+                            <ul class="dropdown-menu">
+                                <li><h6>Your Account</h6</li>
+                                <li><p><a href="" class="dropdown-item"> Create Account</a></p></li>
+                                <li><p><a href="" class="dropdown-item"> Sign In</a></p></li>
+                                <li><h6>Your Lists</h6></li>
+                                <li><p><a href="" class="dropdown-item"> Account Details</a></p></li>
+                                <li><p><a href="" class="dropdown-item">Your Orders</a></p></li>
+                                <li><p><a href="" class="dropdown-item"> Recommendations</a></p></li>
+                                <li><p><a href="" class="dropdown-item"> Browsing History</a></p></li>
+                            </ul>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Register</a>
+                            </li>
+                        </li>
+                    </ul>
                 </div>
-                <a class="btn text-light mt-2" href="">
-                    <p class="icon"><i class="fa-solid fa-cart-shopping"></i>Cart</p>
-                </a>
+                </div>
             </div>
-        </div>
         <!-- Second Navbar -->
         <div class="second-navbar flex justify-content shadow">
             <div class="all">
@@ -115,6 +111,7 @@
             </div>
         </div>
     </div>
+    
     <div class="all-content text-center mt-5">
         <div class="container-fluid">
         <div class="headers-content">
@@ -276,56 +273,62 @@
 </div>
 
 <!-- FOOTER -->
-<div class="allFooterContent">
+<div class="up">
+    <a href="" style="width: 20px; height: 20px; right: 10; background-color: darkblue; color: #fff; padding: 10px; border-radius: 20px;"><i class="fa fa-arrow-up"></i></a>
+</div>
 <div class="back-up shadow text-center">
     <a href="">Back to top <i class="fa fa-arrow-up"></i></a>
 </div>
 
-<div class="footer flex justify-content space text-left">
-    <div class="left-footer flex justify-content space">
-        <div class="know-us">
-            <h5>Get to know us</h5>
-            <p><a href="">Career</a></p>
-            <p><a href="">Blog</a></p>
-            <p><a href="">About GreatNess</a></p>
-            <p><a href="">Investor Relations</a></p>
-            <p><a href="">GreatNess Devices</a></p>
-            <p><a href="">GreatNess Science</a></p>
-        </div>
-        <div class="make-money">
-            <h5>Make Money with Us</h5>
-            <p><a href="">Sell products on GreatNess</a></p>
-            <p><a href="">Sell on GreatNess Business</a></p>
-            <p><a href="">Sell apps on GreatNess</a></p>
-            <p><a href="">Become an Affiliate</a></p>
-            <p><a href="">Advertise Your Products</a></p>
-            <p><a href="">Self-Publish with Us</a></p>
-            <p><a href="">Host an GreatNessHub</a></p>
-            <p><a href="">>See More Make Money with Us</a></p>
-        </div>
+<div class="container-fluid">
+<div class="row footer">
+    <div class="col-md-2 know-us">
+        <h5 class="">Get to know us</h5>
+        <p><a href="">Career</a></p>
+        <p><a href="">Blog</a></p>
+        <p><a href="">About GreatNess</a></p>
+        <p><a href="">Investor Relations</a></p>
+        <p><a href="">GreatNess Devices</a></p>
+        <p><a href="">GreatNess Science</a></p>
     </div>
-    <div class="right-footer flex justify-content space">
-        <div class="payment">
-            <h5>GreatNess Payment Products</h5>
-            <p><a href="">GreatNess Business Card</a></p>
-            <p><a href="">Shop with Points</a></p>
-            <p><a href="">Reload Your Balance</a></p>
-            <p><a href="">GreatNess Currency Converter</a></p>
-        </div>
-        <div class="help">
-            <h5>Let Us Help You</h5>
-            <p><a href="">Your Account</a></p>
-            <p><a href="">Your Orders</a></p>
-            <p><a href="">Shipping Rates & Policies</a></p>
-            <p><a href="">Returns & Replacements</a></p>
-            <p><a href="">Manage Your Content and Devices</a></p>
-            <p><a href="">GreatNess Assistant</a>
-            <p><a href="">Help</a></p>
-        </div>
+    <div class="col-md-2 know-us">
+        <h5 class="">Make Money with Us</h5>
+        <p><a href="">Sell products on GreatNess</a></p>
+        <p><a href="">Sell on GreatNess Business</a></p>
+        <p><a href="">Sell apps on GreatNess</a></p>
+        <p><a href="">Become an Affiliate</a></p>
+        <p><a href="">Advertise Your Products</a></p>
+        <p><a href="">Self-Publish with Us</a></p>
+        <p><a href="">Host an GreatNessHub</a></p>
+        <p><a href="">>See More Make Money with Us</a></p>
+    </div>
+    <div class="col-md-2 know-us">
+        <h5 class="">GreatNess Payment Products</h5>
+        <p><a href="">GreatNess Business Card</a></p>
+        <p><a href="">Shop with Points</a></p>
+        <p><a href="">Reload Your Balance</a></p>
+        <p><a href="">GreatNess Currency Converter</a></p>
+    </div>
+    <div class="col-md-2 know-us">
+        <h5 class="">Let Us Help You</h5>
+        <p><a href="">Your Account</a></p>
+        <p><a href="">Your Orders</a></p>
+        <p><a href="">Shipping Rates & Policies</a></p>
+        <p><a href="">Returns & Replacements</a></p>
+        <p><a href="">Manage Your Content and Devices</a></p>
+        <p><a href="">GreatNess Assistant</a>
+        <p><a href="">Help</a></p>
+    </div>
+    <div class="foot text-center">
+        <small> Conditions of Use</small>
+        <small>  Privacy Notice</small>
+        <small>  Help </small>
+        <h6>&copy; 2023 GreatNess.com, Inc.</h6>
     </div>
 </div>
 </div>
+
+
 </body>
 <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
-<script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
 </html>

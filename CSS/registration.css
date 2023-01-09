@@ -65,9 +65,12 @@ a{
 }
 
 @media (max-width: 720px) {
-    .all-register {
+    #all-register {
         box-sizing: border-box;
         text-align: center;
         align-items: center;
+    }
+    .top-register{
+        width: auto;
     }
 }
