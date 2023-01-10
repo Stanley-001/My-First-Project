@@ -3,18 +3,18 @@
     padding: 0;
 }
 body{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: darkblue;
     box-sizing: border-box;
 }
 
 .logo h3 a{
-    color: #fff;
+    color: darkblue;
     text-decoration: none;
     font-size: 35px;
 }
 .logo h3 a em{
-    color: darkblue;
+    color: #000;
 }
 
 #all-register{
@@ -43,14 +43,14 @@ body{
     border-radius: 20px;
 }
 .already a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 .already a:hover{
     text-decoration: underline;
 }
 a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 .account{

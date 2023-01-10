@@ -129,10 +129,10 @@ em{
 }
 .sign-in p a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .sign-a a{
-  background-color: #FF9900;
+  background-color: darkblue;
   padding: 5px 100px;
   border-radius: 5px;
 }
