@@ -45,6 +45,10 @@ em{
     background: none;
     border: 0;
 }
+
+.line {
+    text-decoration: line-through;
+}
 /* End Search */
 
 
