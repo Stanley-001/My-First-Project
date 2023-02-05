@@ -15,24 +15,28 @@
         <div class="top-register">
             <h2>Create account</h2>
             <div class="register-details">
-                <label for="text">Your name</label><br>
-                <input type="text" name="text" required><br>
-                <label for="number">Mobile number or email</label><br>
-                <input type="text" name="number"><br>
+                <label for="username">Your name</label><br>
+                <input type="text" id="username" ><br>
+                <label for="number">Mobile Number</label><br>
+                <input type="text" name="number" id="number" ><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" ><br>
                 <label for="password">Password</label><br>
-                <input type="password" name="password"><br>
-                <label for="re-enter">Re-enter password</label><br>
-                <input type="password" name="re-enter"><br>
-                <div class="link"><a href="./index.html">Continue</a></div>
+                <input type="password" name="password" id="password" ><br>
+                <label for="conpassword">Re-enter password</label><br>
+                <input type="password" name="conpassword" id="conpassword" ><br>
+                <!-- <div class="link"><a href="./index.html">Continue</a></div> -->
+                <button onclick="validate()">Continue</button>
+                <div id="message"></div>
                 <div class="account">
                 <h6><small>By creating an account, you agree to GreatNess's <br>
-                    <a href="">Conditions of Use and Privacy Notice. <input type="checkbox" required value="click"></a>
+                    <a href="">Conditions of Use and Privacy Notice. <input type="checkbox" name="checkbox" id="checkbox"></a>
                 </small></h6>
                 <div class="already">
                     <h6><small>Already have an account? <a href="login.html">Sign in</a> </small></h6>
                 </div>
             </div>
-            </div>
+          </div>
         </div>
     </div>
 
@@ -41,9 +45,79 @@
     <small> Conditions of Use</small>
     <small>  Privacy Notice</small>
     <small>  Help </small>
-    <h6>&copy; 2022 GreatNess.com, Inc.</h6>
+    <h6>&copy; 2023 GreatNess.com, Inc.</h6>
 </div>
 
 </body>
 <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap-5.2.0-dist/js/jquery-3.2.1.min.js"></script>
+<script>
+  function validate(){
+  // var let name = document.getElementById('name').value
+  let name = $('#username').val()
+  let email = $('#email').val()
+  let number = $('#number').val()
+  let password = $('#password').val()
+  let conpassword = $('#conpassword').val()
+  let checkbox = $('#checkbox').val()
+  let message = document.getElementById('message')
+
+  // NOTE textContent is the same as 'getElementById'
+  if(name == null || name == ''){
+    message.textContent = 'Please enter your full name'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(number == null || number == ''){
+    message.textContent = 'Please number required'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(email == null || email == ''){
+    message.textContent = 'Please enter your email address'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(email.indexOf('@') < 0){
+    message.textContent = 'Please enter a proper email address'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(checkbox == null || checkbox == ''){
+    message.textContent = 'Please click box'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(password == null || password == ''){
+    message.textContent = 'Please enter your password'
+    message.style.color = 'red'
+    return false
+  }
+
+  if(password.length < 4){
+    message.textContent = 'password must be up to 4 characters long'
+    message.style.color = 'red'
+     return false
+  }
+
+  if(conpassword == null || conpassword == ''){
+    message.textContent = 'Please enter confirm password'
+    message.style.color = 'red'
+    return false
+  }
+  if(password != conpassword){
+    message.textContent = 'Password mixmatch'
+    message.style.color = 'red'
+    return false
+  }else{
+    alert('Registration Successful')
+    window.location.href = './index.html'
+  }
+}
+</script>
 </html>

@@ -25,21 +25,30 @@ em{
     align-items: center;
     border-radius: 60px;
     padding: 10px 20px;
+    justify-content: space-between;
 }
 .search-bar input {
     background: transparent;
     outline: none;
+    width: 100%;
     padding: 5px 20px;
     font-size: 18px;
-    color: #fff;
     border: none;
 }
+.search-bar input::selection {
+    color: #000;   
+}
+.search-bar input:focus {
+    color: #fff;
+}
+
 ::placeholder{
     color: #fff;
 }
 .search-bar .fa-magnifying-glass {
     color: #fff;
     font-size: 25px;
+    cursor: pointer;
 }
 .search-bar button {
     background: none;
@@ -86,6 +95,11 @@ em{
 .first img {
     width: 100%;
     height: 50%;
+}
+.first img:hover {
+    cursor: pointer;
+    transition: 3s ease;
+    transform: scale(0.5);
 }
 /* Details */
 .details{
